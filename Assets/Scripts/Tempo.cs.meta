@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a2d90423e171a4f4e8071c5573177f56
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - "Mmanh\xE3": {fileID: 3716172025695325676, guid: b343473d34f4df8408685fd5397a4812, type: 3}
+  - Mtarde: {fileID: 4091240877278717009, guid: ec7ecf3789d5a5745ae31b588cfd8d58, type: 3}
+  - Mpordosol: {fileID: 6496034567758430952, guid: 6e866e2f2dbe5774782108b83b522c6e, type: 3}
+  - Mnoite: {fileID: 3065654117353676348, guid: 045e78d1f9bd5f749b8646cf312715b0, type: 3}
+  - Mmadrugada: {fileID: 5521882987831750411, guid: 5a3966718c5c39c4bbd388732c310783, type: 3}
+  - "Cmanh\xE3": {fileID: 3735248064126734551, guid: f43ba1b6d9f44de4598b045b0f835e2f, type: 3}
+  - Ctarde: {fileID: 1327209135385011704, guid: 75a90d3b9873776439e11bafe2e4b2bb, type: 3}
+  - Cpordosol: {fileID: 2799599327055274526, guid: 5e51776342e614241b39787ba66653fe, type: 3}
+  - Cnoite: {fileID: 4778349630836323700, guid: 8bf2c826adb62e4408b03c19107954d6, type: 3}
+  - Cmadrugada: {fileID: 6824781001693630400, guid: e939279cbbc873b4ea6dab8e59586395, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
