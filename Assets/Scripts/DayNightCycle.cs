@@ -6,7 +6,7 @@ public class DayNightCycle : MonoBehaviour
     public float spriteDuration = 300f; // Duração de cada sprite em segundos
 
     private SpriteRenderer spriteRenderer; // Referência para o componente SpriteRenderer
-    private float currentTime = 0f; // Tempo atual do ciclo
+    public float currentTime = 0f; // Tempo atual do ciclo
     private int currentSpriteIndex = 0; // Índice do sprite atual
 
     private void Start()

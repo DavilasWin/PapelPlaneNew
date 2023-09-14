@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class MovimentoO : MonoBehaviour
 {
-    public float velocidade = 15f;
+    public static float velocidade = 15f;
     public float pontoDestino = -11f;
-    public float tempo = 120.0f; // 2 minutos
-    public float tempo1 = 240.0f; // 4 minutos
-    public float tempo2 = 360.0f; // 6 minutos
+    public timer timerzin;
+    public float tempo = 120.0f;
+    public float tempo1 = 240.0f;
+    public float tempo2 = 340.0f;
 
     private void Update()
     {
@@ -20,7 +21,8 @@ public class MovimentoO : MonoBehaviour
             Destroy(gameObject);
         }
 
-     Tempin(); 
+      Tempin();
+
     }
 
      private void OnTriggerEnter2D(Collider2D other)
@@ -46,26 +48,24 @@ public class MovimentoO : MonoBehaviour
        }
      }
 
-    private void Tempin(){
+  public void Tempin(){
 
-   if(Time.time > tempo){
-
-     velocidade = 20f;
-
-
-
-   }
-
-   if(Time.time > tempo1){
-    velocidade = 25f;
-   }
-   if(Time.time > tempo2){
-     velocidade = 30f;
-   }
-
-
+    if ( timer.timerzin < tempo ){
+        velocidade = 15;
     }
 
+    if( timer.timerzin > tempo ){
+        velocidade = 20;
+    }
+    if ( timer.timerzin > tempo1 ){
+        velocidade = 25;
+    }
+    if ( timer.timerzin > tempo2 ){
+        velocidade  = 30;
+    }
+
+
+  }
 
 
 

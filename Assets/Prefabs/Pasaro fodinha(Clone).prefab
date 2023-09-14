@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8919766179068494922}
   - component: {fileID: -198831471284872203}
   - component: {fileID: 5033307589719131884}
-  - component: {fileID: -2935286243311262285}
+  - component: {fileID: 1682140216001422402}
   m_Layer: 0
   m_Name: Pasaro fodinha(Clone)
   m_TagString: Untagged
@@ -134,7 +134,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-2935286243311262285
+--- !u!114 &1682140216001422402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,3 +151,4 @@ MonoBehaviour:
   tempo: 120
   tempo1: 240
   tempo2: 360
+  MenuIniciar: {fileID: 0}

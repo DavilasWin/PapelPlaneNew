@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float velocidade = 0.0f ;
+    public float velocidade = 15.0f ;
     public float entradaHorizontal ;
     public float entradaVertical ;
     public float limiteSuperior = 4.2f ;
@@ -12,9 +12,15 @@ public class Player : MonoBehaviour
     public float limiteFrente = 7.55f ; 
     public float limiteAtras = -8.4f ;
 
+    public GameOver morreukkk;
+
     public int vidaPlayer = 1 ;
 
     public GameObject BolinhaPapel ;
+
+    public GameObject TresBolasKKJ ;
+
+    public GameObject tirar;
 
     public float tempoDeDisparo = 0.3f ;
 
@@ -37,7 +43,7 @@ public class Player : MonoBehaviour
    
        Movimento();
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
+        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 
             if (Time.time > podeDisparar ){
 
@@ -81,8 +87,10 @@ public class Player : MonoBehaviour
 
        if (transform.position.y < limiteInferior)
        {
-
-   Destroy(this.gameObject);
+     vidaPlayer --;
+     tirar.SetActive(false);
+     morreukkk.painelGameover.SetActive(true);
+     Time.timeScale = 0f;
 
    }
 
@@ -98,8 +106,7 @@ public class Player : MonoBehaviour
 
     if(vidaPlayer < 1){
 
-
-    Destroy(this.gameObject);
+  
 
     }
 

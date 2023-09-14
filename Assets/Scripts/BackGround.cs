@@ -8,6 +8,7 @@ public class BackGround : MonoBehaviour
      public float tempo = 120.0f; // 2 minutos
     public float tempo1 = 240.0f; // 4 minutos
     public float tempo2 = 360.0f; // 6 minutos
+    public timer timerzin;
 
     private void Update()
     {
@@ -31,20 +32,19 @@ public class BackGround : MonoBehaviour
     }
       private void Tempin(){
 
-   if(Time.time > tempo){
+   if ( timer.timerzin < tempo ){
+        velocidade = 15;
+    }
 
-     velocidade = 15f;
-
-
-
-   }
-
-   if(Time.time > tempo1){
-    velocidade = 20f;
-   }
-   if(Time.time > tempo2){
-     velocidade = 25f;
-   }
+    if( timer.timerzin > tempo ){
+        velocidade = 20;
+    }
+    if ( timer.timerzin > tempo1 ){
+        velocidade = 25;
+    }
+    if ( timer.timerzin > tempo2 ){
+        velocidade  = 30;
+    }
 }
 
 }

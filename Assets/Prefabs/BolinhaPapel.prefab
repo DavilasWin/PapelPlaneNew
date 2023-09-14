@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e522452d796fc4982e238893ba495b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocLaser: 12
+  velocLaser: 14
 --- !u!61 &7324387544008354710
 BoxCollider2D:
   m_ObjectHideFlags: 0

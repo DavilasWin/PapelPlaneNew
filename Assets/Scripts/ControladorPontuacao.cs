@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class ControladorPontuacao
+public  class ControladorPontuacao : MonoBehaviour
 {
-    
-   private static int pontuacao;
+   public static int pontuacao;
+
 
 
      
@@ -30,7 +30,11 @@ public static class ControladorPontuacao
  
 
     }
-
-
-
+    
+  
 }
+
+   
+
+
+

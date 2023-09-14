@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fundo
+    uniqueID: 728323945
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -48,7 +51,4 @@ TagManager:
     locked: 0
   - name: objeto
     uniqueID: 831634687
-    locked: 0
-  - name: Fundo
-    uniqueID: 728323945
     locked: 0
