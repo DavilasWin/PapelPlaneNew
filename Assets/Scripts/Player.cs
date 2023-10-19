@@ -9,11 +9,14 @@ public class Player : MonoBehaviour
     public float limiteInferior = -5.75f;
     public float limiteFrente = 7.55f;
     public float limiteAtras = -8.4f;
+    
 
     public bool TiroUnico;
     public bool TiroTriplo;
 
     public GameOver morreukkk;
+    public Animator animador;
+    public bool estaMorto;
 
     public int vidaPlayer = 1;
 
@@ -21,10 +24,11 @@ public class Player : MonoBehaviour
     public GameObject TresBolasKKJ;
     public GameObject tirar;
 
+
     public float tempoDeDisparo = 0.3f;
     public float podeDisparar = 0.0f;
 
-    private void Start()
+    void Start()
     {
         Debug.Log("Start de " + this.name);
         velocidade = 8.0f;
@@ -33,6 +37,7 @@ public class Player : MonoBehaviour
         // PowerUP
         TiroTriplo = false;
         TresBolasKKJ.SetActive(true);
+        animador = GetComponent<Animator>();
     }
 
     private void Update()
@@ -114,13 +119,9 @@ public class Player : MonoBehaviour
     {
 
         vidaPlayer--;
-
-        if (vidaPlayer < 1)
-        {
+        animador.SetBool("estaMorto", true);
 
 
-
-        }
 
     }
 }

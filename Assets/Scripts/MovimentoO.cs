@@ -8,7 +8,12 @@ public class MovimentoO : MonoBehaviour
     public float tempo = 120.0f;
     public float tempo1 = 240.0f;
     public float tempo2 = 340.0f;
+    public Animator animador;
 
+    private void Start()
+    {
+        animador = GetComponent<Animator>();
+    }
     private void Update()
     {
         // Move o objeto da esquerda para a direita
@@ -33,11 +38,14 @@ public class MovimentoO : MonoBehaviour
 
 
           ControladorPontuacao.Pontuacao++;
-          Destroy(this.gameObject);
-          Destroy(other.gameObject);
-       }
+         
+            Destroy(other.gameObject);
+            animador.SetBool("estaMorto", true);
+            velocidade = 0f;
 
-       if (other.tag == "Player"){
+        }
+
+        if (other.tag == "Player"){
 
     Player player = other.GetComponent<Player>();
 

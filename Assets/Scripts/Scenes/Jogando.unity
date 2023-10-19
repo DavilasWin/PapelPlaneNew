@@ -1421,6 +1421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676da765c2a86b24684be1218fea542e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidade: 5
 --- !u!224 &709483759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1430,7 +1431,7 @@ RectTransform:
   m_GameObject: {fileID: 709483754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.12599927}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1438,7 +1439,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.76, y: -0.4}
+  m_AnchoredPosition: {x: 7.77, y: -0.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!50 &709483760
@@ -1475,7 +1476,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.07805252, y: 0.46830666}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1486,7 +1487,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15.36, y: 20.48}
+  m_Size: {x: 5.3694506, y: 5.1819744}
   m_EdgeRadius: 0
 --- !u!1 &742077397
 GameObject:
@@ -1637,7 +1638,7 @@ MonoBehaviour:
   morreukkk: {fileID: 439678836}
   vidaPlayer: 1
   BolinhaPapel: {fileID: 8851023689026932697, guid: 0b1f90fb007ea7c4895218b75b08cafe, type: 3}
-  TresBolasKKJ: {fileID: 413384206530402539, guid: ce8ee080cc47e644587b9a9b2c53407e, type: 3}
+  TresBolasKKJ: {fileID: 2390304878408173121, guid: b1fc1d34c5d89944ebdbabc038ba36bf, type: 3}
   tirar: {fileID: 1459463918}
   tempoDeDisparo: 1
   podeDisparar: 0
@@ -1943,7 +1944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1009755114
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1951,9 +1952,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009755113}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 257193587}
@@ -1962,8 +1963,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.7520142, y: 2.628006}
-  m_SizeDelta: {x: 50.81, y: 36.793}
+  m_AnchoredPosition: {x: 4, y: -4}
+  m_SizeDelta: {x: 50.809998, y: 36.793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009755116
 MonoBehaviour:
